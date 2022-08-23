@@ -19,4 +19,12 @@ ggplot(file, aes(x=dose, y=len)) +
   scale_color_manual(values=c("blue","red"))
   scale_fill_manual(values=c("blue","red"))
   
+  geom_point(color="blue")
+  geom_point(aes(color=aba)
+  
   geom_jitter(alpha=.5,height=0,width=.25)        
+  
+  
+  
+  横纵坐标轴转换
+  coord_flip()
