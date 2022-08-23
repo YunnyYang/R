@@ -1,3 +1,5 @@
+a<-read.table("out.txt",sep = "\t",header = TRUE)
+
 plot------->长数据
      melt
 melt(data,id.vars,measure.vars,variable.name=“variable”,…,na.rm=FALSE,value.name=“value”,
@@ -10,6 +12,11 @@ value.name：新列对应值的变量名
 factorsAsStrings=TRUE：R默认把字符型的数据读入为因子
 
 ggplot(file, aes(x=dose, y=len)) + 
-  geom_boxplot(fill="gray",show.legend=F)+
-  labs(title="Plot of length per dose",x="Dose (mg)", y = "Length")+
+  geom_boxplot(alpha=.25,notch=TRUE)+
+  labs(title="abababa",subtitle="ababa",caption="aba",x="Dose (mg)", y = "Length")+
   theme_classic()
+  theme_bw()
+  scale_color_manual(values=c("blue","red"))
+  scale_fill_manual(values=c("blue","red"))
+  
+  geom_jitter(alpha=.5,height=0,width=.25)        
