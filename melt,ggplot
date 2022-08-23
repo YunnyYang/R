@@ -1,0 +1,14 @@
+plot------->长数据
+     melt
+melt(data,id.vars,measure.vars,variable.name=“variable”,…,na.rm=FALSE,value.name=“value”,
+factorsAsStrings=TRUE)
+
+id.vars:你不想改变的数据列
+measure.vars：你要melt的数据
+variable.name：melt操作后，为新列变量取名
+value.name：新列对应值的变量名
+
+ggplot(file, aes(x=dose, y=len)) + 
+  geom_boxplot(fill="gray",show.legend=F)+
+  labs(title="Plot of length per dose",x="Dose (mg)", y = "Length")+
+  theme_classic()
