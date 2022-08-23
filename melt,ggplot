@@ -28,3 +28,6 @@ ggplot(file, aes(x=dose, y=len)) +
   
   横纵坐标轴转换
   coord_flip()
+
+横坐标转换
+theme(axis.text.x=element_text(angle=90,hjust=1))
