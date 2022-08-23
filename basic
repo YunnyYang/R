@@ -1,0 +1,5 @@
+读取文件
+read.table("document.txt",sep="\t",header=TRUE/FALSE)
+
+箱图
+ggplot(document,aes(x=,y=))+geom_boxplot
