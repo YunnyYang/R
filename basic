@@ -3,6 +3,7 @@ read.table("file.txt",sep="\t",header=TRUE/FALSE.skip=5,nrows=100)
 read。csv("file.csv",row.names=1,check.names=T)
          #check.names-->列名可以有特殊符号
          #row.names-->row name change
+         #comment.char="!"-->注释符号是！
 header=TRUE   第一行是变量
 skip：跳过n行
 nrows:显示前n行
