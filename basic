@@ -8,6 +8,12 @@ header=TRUE   第一行是变量
 skip：跳过n行
 nrows:显示前n行
 
+导出文件
+write.csv(bianliang,file="daochuwenjianming.csv")
+保存为Rdata并加载
+save(bianliang,file="name.Rdata")
+load("name.Rdata")
+
 箱图
 ggplot(file,aes(x=,y=))+geom_boxplot
 
